@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf);
+}
+@font-face {
+    font-family: 'android-mac';
+    src: url(__MACOSX/fontes/idroid.otf);
+}
+
+.android-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    
+    background-color: rgb(0, 71, 0);
+    width: 100%;
+  }
+  .android-video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+  }
+header {
+    background: linear-gradient( rgb(1, 162, 90) , rgb(0, 74, 28) );
+    color: #ffffff;
+    text-align: center;
+    padding: 0.1em 0 0.1em 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+header h1{
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 1em 0 1em 0;
+}
+header h2{
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0.5em 0 1em 0;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none
+
+}
+
+header ul{
+    margin-left: 0.5em;
+}
+header nav{
+    margin: 0 0 0.5em 0;
+    text-align: justify;
+}
+header li{
+    font-size: 1.2em;
+    display: inline;
+    margin: 0 0.5em 0 0.5em;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #27a76182;
+}
+
+main{
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    margin: 0px;
+}
+main h1{
+    padding-top: 0.7em;
+    text-indent: 0.5em;
+    font-family: 'android', 'android-mac', serif;
+    color: #1A5A37;
+    font-size: 2em;
+}
+main article h2{
+    text-indent: 0.5em;
+    background: linear-gradient(90deg, rgba(8, 240, 0, 0.36) , rgba(255, 255, 255, 0.344) );
+    font-family: 'android', 'android-mac', serif;
+    color: #1A5A37;
+}
+section{
+    margin: 1em 1em 1em 1em;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    margin: 0.5em 0 0.5em 0;
+    text-indent: 1.5em;
+}
+strong{
+    font-family: 'Poppins';
+    color: #1b633c;
+    text-shadow: 1px 1px px #27a760;
+}
+section img{
+    width: 100%;
+    height: 100%;
+    margin : 1em 0 1em 0;
+}
+section img#bugdroid{
+    width: 40%;
+    height: 40%;
+    margin: 1em 25% 1em 25%;
+}
+section.finalizacao{
+    background-color: #9fe9c0a5;
+    
+    box-shadow: 3px 3px 6px #0000006e;
+    margin: 2%;
+    border-radius: 10px;
+}
+#version-list{
+    list-style-type: none;
+    font-family: 'Poppins';
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+    columns: 2;
+    
+}
+#version-list li::before{
+    
+    content: "\2714\00A0\00A0";
+}
+#version-list li{
+    font-size: 1.2em; 
+    margin: 0.5em;
+    text-indent: 1.5em;
+    flex-basis: calc(20% - 1em); 
+}
+.chamado {
+    
+    background-color: #3c7b59;
+    
+    border-radius: 10px 10px 0px 0px;
+}
+.chamado h2{
+    font-family: sans-serif;
+    color: #ffffff;
+    text-indent: 0.5em;
+    padding: 0.5em 0 0.5em 0;
+}
+.chamado p{
+    font-family: 'Poppins';
+    color: #ffffff;
+    text-indent: 1.5em;
+    font-size: 20px;
+    padding: 0.5em 0 0.5em 0;
+}
+footer{
+    background-color: #1b5636;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.1em 0 0.1em 0;
+    font-family: 'Poppins';
+    font-size: 1em;
+}
+main a::after,footer a::after{
+    content: "🔗";
+}
+main a,footer a{
+    color: #4fa934;
+    text-decoration: none;
+    font-weight:bold
+}
+a:hover{
+    
+    text-decoration: underline;
+}
+@media screen and (min-width: 600px) {
+    
+    main {
+        background-color: #f0f0f0;
+        margin: 0px 15% 10px 15%;
+    }
+   
+}
