@@ -177,11 +177,34 @@ a:hover{
     
     text-decoration: underline;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 680px) {
     
     main {
         background-color: #f0f0f0;
         margin: 0px 15% 10px 15%;
     }
-   
+    section ul{
+        margin: 0px;
+        padding: 0px
+    }
+    #version-list li{
+    font-size: 0.8em; 
+    margin: 0.2em;
+    text-indent: 0em;
+    flex-basis: calc(20% - 1em); 
+    }
+    main h1{
+    padding-top: 0.5em;
+    text-indent: 0.3em;
+    font-family: 'android', 'android-mac', serif;
+    color: #1A5A37;
+    font-size: 1.2em;
+    }
+    main article h2{
+    text-indent: 0.3em;
+    background: linear-gradient(90deg, rgba(8, 240, 0, 0.36) , rgba(255, 255, 255, 0.344) );
+    font-family: 'android', 'android-mac', serif;
+    color: #1A5A37;
+    font-size:1em
+    }
 }
